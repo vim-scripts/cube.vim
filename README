@@ -1,0 +1,15 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1042
+
+This is a syntax file for Cube Engine cfg files. It applies to autoexec.cfg, package.cfg and any other file which uses Cube script.
+
+More info about Cube Engine here: http://cube.sourceforge.net/
+
+This is my first syntax file. Maybe it isn't the best, but it works very well.
+
+Features:
+ - Support for keyboard keys names only after "bind" command. (MOUSE1, MOUSE2,... is also supported)
+ - Support for entities names only after "newent" and "clearents" commands.
+ - Support for all cube commands of version 2004_05_22, except "keymap" (which you should not use, according to docs).
+ - Recognizes special aliases "level_trigger_xx" and "nextmap_xx".
+
+I don't know if it will work on Vim 5.
