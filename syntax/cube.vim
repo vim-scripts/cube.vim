@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language:	Cube engine cfg files
 " Maintainer:	Denilson F. de Sa - CrazyTerabyte (denilson@vialink.com.br)
-" Last change:	2004 July 20
-" Version:      1.0
+" Last change:	2005 April 10
+" Version:      1.1
 
 if exists ("b:current_syntax")
     finish
@@ -32,7 +32,7 @@ syn keyword cubeAlias       alias
 syn keyword cubeNewent      newent clearents skipwhite nextgroup=cubeEntities
 "TODO: add syntax rules for 'keymap'
 syn match   cubeStatement   /[+\*=<>-]/
-syn keyword cubeStatement   div mod strcmp echo name team skill showscores password connect disconnect servermenu updatefrommaster savegame loadgame screenshot menuitem newmenu quit say saycommand rate conskip weapon gamespeed record stop demo demoplaybackspeed demodelaymsec demotracking edittoggle edittex editheight solid equalize heighfield vdelta corner undo undomegs copy paste replace texturereset texture slope arch archvertex perlin select trigger music registersound sound mapmodelreset mapmodel delent entproperty scalelights waterlevel edittag fullbright showmip toggleocull recalc map savemap newmap mapenlarge mapmsg fog fogcolour loadsky concat concatword at invmouse musicvol soundvol fov fpsrange minlod dynlight watersubdiv gamma lightscale hudgun hidestats maxroll crosshairsize crosshairfx undomegs attack forward left backward right jump mode showmenu sleep onrelease rnd heightfield
+syn keyword cubeStatement   div mod strcmp echo exec name team skill showscores password connect disconnect servermenu updatefrommaster sendmap getmap savegame loadgame screenshot menuitem newmenu quit say saycommand rate conskip weapon gamespeed record stop demo demoplaybackspeed demodelaymsec demotracking edittoggle edittex editheight solid equalize heighfield vdelta corner undo undomegs copy paste replace texturereset texture slope arch archvertex perlin select trigger music registersound sound mapmodelreset mapmodel delent entproperty scalelights waterlevel edittag fullbright showmip toggleocull recalc map savemap newmap mapenlarge mapmsg fog fogcolour loadsky concat concatword at invmouse musicvol soundvol fov fpsrange minlod dynlight watersubdiv gamma lightscale hudgun hidestats maxroll crosshairsize crosshairfx undomegs attack forward left backward right jump mode showmenu sleep onrelease rnd heightfield particlesize maxparticles history lighterror
 syn keyword cubeEntities    light playerstart shells bullets rockets riflerounds quaddamage health healthboost greenarmour yellowarmour teleport teledest mapmodel monster trigger jumppad
 
 syn cluster cubeCommands contains=cubeStatement,cubeAlias,cubeBind
